@@ -10,7 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;;import java.util.LinkedList;
+import org.springframework.web.bind.annotation.PostMapping;
+import java.util.LinkedList;
 import java.util.List;
 
 @Controller
@@ -22,6 +23,7 @@ public class EditorStablesController {
     @Autowired
     @Qualifier("stableConverter")
     private DataConverter<Stable, StableDto> converter;
+
 
     @GetMapping("/admin/stables")
     public String view(Model model){
